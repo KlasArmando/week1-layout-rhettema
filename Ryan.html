@@ -1,0 +1,110 @@
+<!doctype html> 
+<html>
+<head> 
+	<title>Slangen</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="ryan.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class=test>
+    <img src="snekz.jpg">
+
+<main>
+	<div class= navcontainer>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://static1.squarespace.com/static/59967e07f14aa122b4d76814/t/5b232f3a70a6ad29d6d0ed3e/1529604627113/thanos.jpg">Ryan</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+       <a href="#jump" class=nav-link>Informatie</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Foto's
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="C:\Users\R\Desktop\KO\cornsnake1.jpg">Foto</a>
+          <a class="dropdown-item" href="C:\Users\R\Desktop\KO\cornsnake2.jpg"">Foto 2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="C:\Users\R\Desktop\KO\cornsnake3.jpg"">Foto 3</a>
+        </div>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  </ul>
+</nav>
+
+
+
+<div class=quote1>
+  <blockquote class="ludwig">
+    "Every great story seems to start with a snake."
+            - Nicolas Cage
+  </blockquote>
+</div>
+
+<div class='infoblok1' id="jump">
+  <h2 class=titel>Informatie</h2>
+  <hr>
+  <p class=text-inf>"Slangen zijn super leuk om te hebben als je weet wat je doet. Met deze website ga ik proberen jou zoveel mogelijk informatie te geven voor je huidige of mogelijk toekomstige slang. Ik heb hier informatie gelinkt waar er over perfecte beginner snakes word gepraat, wat je allemaal moet kopen en hoe je het moet voorbereiden.
+  Ook heb ik hier mijn favoriete slangen forum geplaatst waar je elke vraag die je nog kan hebben kan stellen. Succes!
+</p>
+</div>
+
+<div class=infoblok2>
+  <h2 class=titel2> Zie ook</h2>
+  <hr>
+  <div class="list-group">
+  </a>
+  <a href="http://www.reptilesmagazine.com/Snakes/5-Great-Beginner-Pet-Snakes/" class="list-group-item list-group-item-action">Beste beginnerslangen</a>
+  <a href="https://www.wikihow.com/Care-for-Snakes" class="list-group-item list-group-item-action">Hoe te verzorgen</a>
+  <a href="http://www.ssnakess.com/forums/" class="list-group-item list-group-item-action">Tips and tricks</a>
+</div>
+<div class=videoyt>
+<iframe width="660" height="315" src="https://www.youtube.com/embed/1bp_A9zD4hs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</main>
+
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+    
+      event.preventDefault();
+
+    
+      var hash = this.hash;
+
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
